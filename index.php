@@ -1,15 +1,10 @@
 
 <html>
     <head>
-        <title>Naga-No, <?php print date('d') ?> <?php print 'ir PHP ';
-?> </title> 
+        <title>PHP lydes ir <?php print'ryt ' . date('y.m.d'); ?> </title> 
     </head>
     <body>
-        <h1><strong>Gubertas</strong> - HTML <?php print 'ir PHP ';
-?> asas jau nuo <?php print date('y') ?> metu <?php
-?> </h1>
-        <p>Viskas prasidejo <?php print date('m') ?> menesio,<?php print date('d') ?> diena <br>
-             <?php print date('Y-m-d H:i:s'); ?>
-        </p> 
+        <h1><strong>Gubertas</strong> - PHP su manim buvo ir  <?php print date('h ') . 'valanda' ?>   </h1>
+        <p>Viskas prasidejo <?php print date('m ') . 'menesio ' . date('d ') . 'diena'; ?></p> 
     </body>
 </html>
