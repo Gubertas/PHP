@@ -1,10 +1,12 @@
 
 <html>
     <head>
-        <title>PHP lydes ir <?php print'ryt ' . date('y.m.d'); ?> </title> 
+        <title>Komentarai </title> 
     </head>
     <body>
-        <h1><strong>Gubertas</strong> - PHP su manim buvo ir  <?php print date('h ') . 'valanda' ?>   </h1>
-        <p>Viskas prasidejo <?php print date('m ') . 'menesio ' . date('d ') . 'diena'; ?></p> 
+        <h1><strong>Gubertas</strong> dainu tekstai   </h1>
+        <h2> paragrafo daina   </h2>
+        <p>as toks vienisas jaunas paragrafas</p> 
+      <!--  <p>mindau svetimo kodo gatves</p> -->
     </body>
 </html>
