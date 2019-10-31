@@ -5,12 +5,12 @@ $sanaudos = 7.5;
 
 $kaina = 1.3;
 
-$isviso_degalu = round(($atstumas * $sanaudos) / 100, 2);
-
+$isviso_degalu = round($atstumas * ($sanaudos / 100), 2);
 $tripo_kaina = round($isviso_degalu * $kaina, 2);
 
+$h1 = 'DEGALAI';
 $n1 = 'Nuvaziuota distancija ';
-$n2 = 'sunaudota ' . $atstumas . 'kuro';
+$n2 = 'sunaudota ' . $isviso_degalu . 'kuro';
 $n3 = 'kaina ' . $tripo_kaina . 'narnijos valiuta';
 ?>
 <html>
@@ -21,7 +21,7 @@ $n3 = 'kaina ' . $tripo_kaina . 'narnijos valiuta';
     </head>
     <body>
 
-        <h1>DEGALAi </h1>
+        <h1><?php print $h1 ; ?></h1>
         <ul>
             <li><?php print $n1; ?></li> 
             <li><?php print $n2; ?></li>
