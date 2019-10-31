@@ -1,6 +1,9 @@
 <?php
-$img_src = 'assets/images/HALLOWEEN.gif';
-;
+$sudas1 = (rand(1, 100));
+
+$sudas2 = (rand(1, 100));
+$sudas3 = (rand(1, 100));
+$sudas4 = (rand(1, 100));
 ?>
 <html>
 
@@ -9,12 +12,15 @@ $img_src = 'assets/images/HALLOWEEN.gif';
 
     </head>
     <body>
-        <img src="<?php print $img_src ?>">
-        <img src="<?php print $img_src ?>">
-        <img src="<?php print $img_src ?>">
-        <img src="<?php print $img_src ?>">
-             </body> 
+        <ul>
+            <li>skolos skasicuokle<?php print $sudas1; ?></li>
+            <li>jei paemei<?php print $sudas2; ?></li>
+            <li>su dviem kabanciais grazinsi<?php print $sudas3; ?></li>
+            <li>su vienu kabanciu grazinsi<?php print $sudas4; ?></li>
 
-             </html>
+        </ul>
+    </body> 
+
+</html>
 
 
