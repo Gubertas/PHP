@@ -1,24 +1,24 @@
 <?php
-$sudas1 = (rand(1, 100));
+$bin_vol = 40;
+$bin_heap_vol = rand(5,5);
+$trash_per_day = 15;
 
-$sudas2 = (rand(1, 100));
-$sudas3 = (rand(1, 100));
-$sudas4 = (rand(1, 100));
+$days = ($bin_vol + $bin_heap_vol) / $trash_per_day ;
 ?>
 <html>
 
     <head>
-        <title> NAGA <?php print date('Y-m-d', strtotime('+' . rand(1, 5) . 'years')); ?></title>
+        <title> naGa <?php print date('Y-m-d', strtotime('+' . rand(1, 5) . 'years')); ?></title>
 
     </head>
     <body>
-        <ul>
-            <li>skolos skasicuokle<?php print $sudas1; ?></li>
-            <li>jei paemei<?php print $sudas2; ?></li>
-            <li>su dviem kabanciais grazinsi<?php print $sudas3; ?></li>
-            <li>su vienu kabanciu grazinsi<?php print $sudas4; ?></li>
 
-        </ul>
+        <h1>Siukslines prognoze </h1>
+        <p>Siuksliadezei telpa <?php print $bin_vol; ?></p>
+        <p>Boba tyli kol siuksliu virsyja nedaugiau nei <?php print $bin_heap_vol; ?></p>
+        <h3>reiskia galiu dar ilsetis <?php print $days; ?> d.</h3>
+
+
     </body> 
 
 </html>
