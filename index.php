@@ -1,9 +1,17 @@
 <?php
-$bin_vol = 40;
-$bin_heap_vol = rand(5,20);
-$trash_per_day = 15;
+$atstumas = rand(1, 500);
 
-$days = floor(($bin_vol + $bin_heap_vol) / $trash_per_day)  ;
+$sanaudos = 7.5;
+
+$kaina = 1.3;
+
+$isviso_degalu = round(($atstumas * $sanaudos) / 100, 2);
+
+$tripo_kaina = round($isviso_degalu * $kaina, 2);
+
+$n1 = 'Nuvaziuota distancija ';
+$n2 = 'sunaudota ' . $atstumas . 'kuro';
+$n3 = 'kaina ' . $tripo_kaina . 'narnijos valiuta';
 ?>
 <html>
 
@@ -13,11 +21,12 @@ $days = floor(($bin_vol + $bin_heap_vol) / $trash_per_day)  ;
     </head>
     <body>
 
-        <h1>Siukslines prognoze </h1>
-        <p>Siuksliadezei telpa <?php print $bin_vol; ?></p>
-        <p>Boba tyli kol siuksliu virsyja nedaugiau nei <?php print $bin_heap_vol; ?></p>
-        <h3>reiskia galiu dar ilsetis <?php print $days; ?> d.</h3>
-
+        <h1>DEGALAi </h1>
+        <ul>
+            <li><?php print $n1; ?></li> 
+            <li><?php print $n2; ?></li>
+            <li><?php print $n3; ?></li>
+        </ul>
 
     </body> 
 
